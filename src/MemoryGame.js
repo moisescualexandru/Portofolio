@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 import Image from './img/Memory Game.png'
 
 class MemoryGame extends Component {
+	state = {
+		scale: false
+	}
+
+	scaleImage = () => {
+		this.state.scale ? this.setState({ scale: false }) : this.setState({ scale: true });
+	}
+
 	render() {
 		return(
 			<div className='main'>
 				<div className="info-header">
-					<img src={Image} className='project-image' alt="Memory Game Web App"/>
+					<img src={Image} className='project-image' alt="Memory Game Web App" onClick={this.scaleImage}/>
 					<h1>Memory Game</h1>
 				</div>
 				<div className="info-content">
@@ -15,6 +23,11 @@ class MemoryGame extends Component {
 					<p>- Technologies used: HTML5, CSS3, Vanilla JavaScript</p>
 					<p>- Design and functionality implemented personally</p>
 				</div>
+				{this.state.scale && (
+					<div className='scaled'>
+						<img src={Image} alt="Memory Game Web App" className='project-image-scaled' onClick={this.scaleImage}/>
+					</div>
+				)}
 			</div>
 		)
 	}

@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 import Image from './img/Neighborhood Restaurant.png'
 
 class NeighborhoodMap extends Component {
+	state = {
+		scale: false
+	}
+
+	scaleImage = () => {
+		this.state.scale ? this.setState({ scale: false }) : this.setState({ scale: true });
+	}
+
 	render() {
 		return(
 			<div className='main'>
 				<div className="info-header">
-					<img src={Image} className='project-image' alt="Neighborhood Map Web App"/>
+					<img src={Image} id='project-image' className='project-image' alt="Neighborhood Map Web App" onClick={this.scaleImage}/>
 					<h1>Neighborhood Map</h1>
 				</div>
 				<div className="info-content">
@@ -16,7 +24,11 @@ class NeighborhoodMap extends Component {
 					<p>- Design and functionality were implemented personally</p>
 					<p>- Learned about implementing APIs with React JS framework and how to customize the functionality</p>
 				</div>
-
+				{this.state.scale && (
+					<div className='scaled'>
+						<img src={Image} alt="Neighborhood Map Web App" className='project-image-scaled' onClick={this.scaleImage}/>
+					</div>
+				)}
 			</div>
 		)
 	}

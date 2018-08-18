@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 import Image from './img/myreads.png'
 
 class MyReads extends Component {
+	state = {
+		scale: false
+	}
+
+	scaleImage = () => {
+		this.state.scale ? this.setState({ scale: false }) : this.setState({ scale: true });
+	}
+
 	render() {
 		return(
 			<div className='main'>
 				<div className="info-header">
-					<img src={Image} className='project-image' alt="My Reads Web App"/>
+					<img src={Image} className='project-image' alt="My Reads Web App" onClick={this.scaleImage}/>
 					<h1>My Reads</h1>
 				</div>
 				<div className="info-content">
@@ -15,6 +23,11 @@ class MyReads extends Component {
 					<p>- Functionality was implemented by me by filtering through books, adding them to a category shelf and switching through shelves</p>
 					<p>- Learned how to implement a back-end server into the framework, how to filter through objects based on user input and how to debug an application</p>
 				</div>
+				{this.state.scale && (
+					<div className='scaled'>
+						<img src={Image} alt="My Reads Web App" className='project-image-scaled' onClick={this.scaleImage}/>
+					</div>
+				)}
 			</div>
 		)
 	}
