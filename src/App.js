@@ -6,6 +6,11 @@ import Nav from './Nav.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
 import NeighborhoodMap from './NeighborhoodMap.js';
+import ArcadeGame from './ArcadeGame.js';
+import MemoryGame from './MemoryGame.js';
+import Pixel from './Pixel.js';
+import MyReads from './MyReads.js';
+import About from './About.js';
 
 class App extends Component {
   render() {
@@ -23,23 +28,23 @@ class App extends Component {
         )}/>
 
         <Route path='/arcade-game' exact render={() => (
-          <div></div>
+          <ArcadeGame />
         )}/>
 
         <Route path='/memory-game' exact render={() => (
-          <div></div>
+          <MemoryGame />
         )}/>
 
         <Route path='/pixel-art-maker' exact render={() => (
-          <div></div>
+          <Pixel />
         )}/>
 
         <Route path='/myreads' exact render={() => (
-          <div></div>
+          <MyReads />
         )}/>
 
-        <Route path='/contact' exact render={() => (
-          <div></div>
+        <Route path='/about' exact render={() => (
+          <About />
         )}/>
 
         <Footer />
