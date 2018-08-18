@@ -24,8 +24,8 @@ class ClassicArcade extends Component {
 					<p>- Learned about implementing a MVC system using JavaScript and how to handle screen movements and collisions between objects</p>
 				</div>
 				{this.state.scale && (
-					<div className='scaled'>
-						<img src={Image} alt="Classic Arcade Game Web App" className='project-image-scaled' onClick={this.scaleImage}/>
+					<div className='scaled' onClick={this.scaleImage}>
+						<img src={Image} alt="Classic Arcade Game Web App" className='project-image-scaled'/>
 					</div>
 				)}
 			</div>

@@ -8,6 +8,7 @@
 /*Main app*/
 .App {
   max-width: 1600px;
+  min-width: 1200px;
   margin: 5px auto;
   background-color: #85a3e0;
   border-radius: 4px;
@@ -149,7 +150,7 @@ a {
   height: 40px;
   vertical-align: middle;
   padding-top: 10px;
-  border-bottom: 1px groove #85a3e0;
+  border-top: 1px groove #85a3e0;
 }
 
 .project:hover {
@@ -186,7 +187,7 @@ a {
 .project-image {
   width: 30%;
   height: 250px;
-  border: 2px groove orange;
+  border: 2px groove #85a3e0;
   border-radius: 4px;
   transition: transform 0.2s ease-in-out;
 }
@@ -194,7 +195,7 @@ a {
 .project-image:hover {
   cursor: pointer;
   transform: scale(1.03, 1.03);
-  border: 2px groove red;
+  border: 2px groove white;
 }
 
 .scaled {
@@ -207,16 +208,16 @@ a {
   top: 0;
   left: 0;
   text-align: center;
+  cursor: pointer;
 }
 
 .project-image-scaled {
   width: 80%;
   height: 80%;
-  cursor: pointer;
   vertical-align: middle;
   margin: 50px auto;
   border-radius: 8px;
-  border: 4px groove orange;
+  border: 4px groove #cccccc;
 }
 
 .info-header h1 {

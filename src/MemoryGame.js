@@ -24,8 +24,8 @@ class MemoryGame extends Component {
 					<p>- Design and functionality implemented personally</p>
 				</div>
 				{this.state.scale && (
-					<div className='scaled'>
-						<img src={Image} alt="Memory Game Web App" className='project-image-scaled' onClick={this.scaleImage}/>
+					<div className='scaled' onClick={this.scaleImage}>
+						<img src={Image} alt="Memory Game Web App" className='project-image-scaled'/>
 					</div>
 				)}
 			</div>

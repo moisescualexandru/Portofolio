@@ -24,8 +24,8 @@ class MyReads extends Component {
 					<p>- Learned how to implement a back-end server into the framework, how to filter through objects based on user input and how to debug an application</p>
 				</div>
 				{this.state.scale && (
-					<div className='scaled'>
-						<img src={Image} alt="My Reads Web App" className='project-image-scaled' onClick={this.scaleImage}/>
+					<div className='scaled' onClick={this.scaleImage}>
+						<img src={Image} alt="My Reads Web App" className='project-image-scaled'/>
 					</div>
 				)}
 			</div>

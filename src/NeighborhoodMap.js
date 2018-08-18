@@ -25,8 +25,8 @@ class NeighborhoodMap extends Component {
 					<p>- Learned about implementing APIs with React JS framework and how to customize the functionality</p>
 				</div>
 				{this.state.scale && (
-					<div className='scaled'>
-						<img src={Image} alt="Neighborhood Map Web App" className='project-image-scaled' onClick={this.scaleImage}/>
+					<div className='scaled' onClick={this.scaleImage}>
+						<img src={Image} alt="Neighborhood Map Web App" className='project-image-scaled'/>
 					</div>
 				)}
 			</div>

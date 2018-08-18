@@ -25,8 +25,8 @@ class Pixel extends Component {
 					<p>- You can pick the canvas size, select the color and do your best</p>
 				</div>
 				{this.state.scale && (
-					<div className='scaled'>
-						<img src={Image} alt="Pixel Art Maker Web App" className='project-image-scaled' onClick={this.scaleImage}/>
+					<div className='scaled' onClick={this.scaleImage}>
+						<img src={Image} alt="Pixel Art Maker Web App" className='project-image-scaled'/>
 					</div>
 				)}				
 			</div>
