@@ -5,16 +5,20 @@
   font-size: 2em;
 }
 
+/*Main app*/
 .App {
   max-width: 1600px;
   margin: 5px auto;
-  background-color: orange;
+  background-color: #85a3e0;
   border-radius: 4px;
-  box-shadow: 5px 5px 6px brown;
+  box-shadow: 5px 5px 6px black;
   height: 95vh;
+  padding-top: 5px;
 }
 
+/*Header*/
 .header {
+  background-image: url('img/header.png');
   display: flex;
   flex-wrap: wrap;
   border-bottom: 5px solid black;
@@ -30,16 +34,27 @@
 
 h2 {
   margin-left: 10px;
+  color: white;
 }
 
 .function {
   font-size: .8em;
 }
+
 img {
   width: 100px;
   height: 100px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.image {
+  background-color: white;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
 }
 
+/*Clock*/
 .clock {
   float: right;
   width: 4rem;
@@ -83,6 +98,7 @@ img {
   background-color: brown;
 }
 
+/*Navigation Bar*/
 .nav {
   display: flex;
   flex-wrap: wrap;
@@ -97,10 +113,10 @@ img {
   height: 40px;
   vertical-align: middle;
   padding-top: 20px;
-  background-color: white;
+  background-color: #cccccc;
   margin: 1px;
   color: black;
-  box-shadow: 2px 2px 2px brown;
+  box-shadow: 2px 2px 2px black;
 }
 
 a {
@@ -110,9 +126,10 @@ a {
 
 .button:hover {
   cursor: pointer;
-  background-color: yellow;
+  background-color: #999999;
 }
 
+/*Overlay Panel*/
 .projects {
   max-height: 0;
   transition: max-height .3s ease-in-out;
@@ -120,8 +137,8 @@ a {
   margin-top: 22px;
   position: relative;
   width: 100%;
-  background-color: rgba(255,255,255,0.9);
-  box-shadow: 2px 2px 2px orange;
+  background-color: rgba(204, 204, 204, 0.9);
+  box-shadow: 2px 2px 2px black;
 }
 
 .show {
@@ -132,30 +149,33 @@ a {
   height: 40px;
   vertical-align: middle;
   padding-top: 10px;
-  border-bottom: 1px groove orange;
+  border-bottom: 1px groove #85a3e0;
 }
 
 .project:hover {
-  background-color: yellow;
+  background-color: #999999;
 }
 
+/*Main display*/
 .main {
   margin-left: 200px;
   margin-right: 200px;
   width: 75%%;
   height: 500px;
   margin-top: 25px;
-  background-color: white;
+  background-color: #cccccc;
   border-radius: 8px;
-  box-shadow: 2px 2px 2px brown;
+  box-shadow: 2px 2px 2px black;
 }
 
 .center-image {
   width: 100%;
   height: 100%;
   border-radius: 8px;
+  margin: 0;
 }
 
+/*Project display*/
 .info-header {
   display: inline-flex;
   margin-left: 10px;
@@ -211,10 +231,12 @@ a {
   border-top: 1px solid black;
 }
 
+/*About display*/
 .hi {
   margin-left: 20px;
   margin-top: 20px;
   text-align: center;
+  color: black;
 }
 
 .about-me {
@@ -223,7 +245,7 @@ a {
 }
 
 .profile-image {
-  border: 10px groove orange;
+  border: 10px groove white;
   border-radius: 50%;
   width: 150px;
   height: 150px;
