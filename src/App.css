@@ -87,3 +87,25 @@ img {
 .button:hover {
   cursor: pointer;
 }
+
+.projects {
+  max-height: 0;
+  transition: max-height .3s ease-in-out;
+  overflow: hidden;
+  padding-top: 22px;
+  position: relative;
+  width: 100%;
+}
+
+.show {
+  max-height: 20em;
+}
+
+.project {
+  border: 1px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 40px;
+  vertical-align: middle;
+  padding-top: 10px;
+}
