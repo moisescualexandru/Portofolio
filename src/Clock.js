@@ -29,7 +29,8 @@ class Clock extends Component {
 	    minHand.style.transform = `rotate(${minutesDegrees}deg)`;
 
 	    const hour = this.state.time.getHours();
-	    const hoursDegrees = ((hour/12) * 360) + 90;
+	    let hoursDegrees = ((hour/12) * 360) + 90;
+	    (hoursDegrees >= 360) ? hoursDegrees -= 360 : '';
 	    hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
 	}
 

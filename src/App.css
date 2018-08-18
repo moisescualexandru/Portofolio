@@ -1,11 +1,38 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 5px solid black;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.info {
+  width:  75%;
+  display: inline-flex;
+  padding: 10px;
+}
+
+h2 {
+  margin-left: 10px;
+}
+
+.function {
+  font-size: .8em;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+
 .clock {
-  width: 30rem;
-  height: 30rem;
-  border:20px solid white;
+  float: right;
+  width: 4rem;
+  height: 4rem;
+  border: 7px solid white;
   border-radius:50%;
-  margin:50px auto;
+  margin: 10px auto;
   position: relative;
-  padding:2rem;
+  padding:.5rem;
   box-shadow:
     0 0 0 4px rgba(0,0,0,0.1),
     inset 0 0 0 3px #EFEFEF,
@@ -22,7 +49,7 @@
 
 .hand {
   width:50%;
-  height:6px;
+  height:3px;
   background:black;
   position: absolute;
   top:50%;
@@ -38,4 +65,25 @@
 
 .min-hand {
   background-color: brown;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.button {
+  width: 32%;
+  border: 1px solid black;
+  height: 40px;
+  vertical-align: middle;
+  padding-top: 20px;
+}
+
+.button:hover {
+  cursor: pointer;
 }
