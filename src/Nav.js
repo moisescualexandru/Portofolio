@@ -6,7 +6,7 @@ class Nav extends Component {
 		return(
 			<div className="nav">
 				<div className="button"><Link to='/'>Home</Link></div>
-				<div className="button" onMouseOver={() => document.getElementById('projects').classList.add('show')}>
+				<div className="button" onMouseOver={() => document.getElementById('projects').classList.add('show')} onMouseOut={() => document.getElementById('projects').classList.remove('show')}>
 					Projects
 					<div id='projects' className="projects" onMouseOut={() => document.getElementById('projects').classList.remove('show')}>
 						<Link to='/neighborhood-map'><div className='project'>Neighborhood Map</div></Link>
@@ -16,7 +16,7 @@ class Nav extends Component {
 						<Link to='/myreads'><div className='project'>My Reads</div></Link>
 					</div>
 				</div>
-				<Link to='/contacts' className="button"><div>Contact</div></Link>
+				<Link to='/contact' className="button"><div>Contact</div></Link>
 			</div>
 		)
 	}

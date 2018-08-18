@@ -1,3 +1,12 @@
+.App {
+  max-width: 1600px;
+  margin: 5px auto;
+  background-color: orange;
+  border-radius: 4px;
+  box-shadow: 5px 5px 6px brown;
+  height: 95vh;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -72,29 +81,40 @@ img {
   flex-wrap: wrap;
   margin: 10px;
   text-align: center;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 197px;
+  padding-right: 197px;
 }
 
 .button {
-  width: 32%;
-  border: 1px solid black;
+  width: 33%;
   height: 40px;
   vertical-align: middle;
   padding-top: 20px;
+  background-color: white;
+  margin: 1px;
+  color: black;
+  box-shadow: 2px 2px 2px brown;
+}
+
+a {
+  text-decoration-line: none;
+  color: black;
 }
 
 .button:hover {
   cursor: pointer;
+  background-color: yellow;
 }
 
 .projects {
   max-height: 0;
   transition: max-height .3s ease-in-out;
   overflow: hidden;
-  padding-top: 22px;
+  margin-top: 22px;
   position: relative;
   width: 100%;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 2px 2px 2px orange;
 }
 
 .show {
@@ -102,10 +122,27 @@ img {
 }
 
 .project {
-  border: 1px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
   height: 40px;
   vertical-align: middle;
   padding-top: 10px;
+  border-bottom: 1px groove orange;
+}
+
+.project:hover {
+  background-color: yellow;
+}
+
+.main {
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 75%%;
+  height: 500px;
+  margin-top: 25px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px brown;
+}
+.center-image {
+  width: 100%;
+  height: 100%;
 }

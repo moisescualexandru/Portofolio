@@ -6,14 +6,6 @@ class Clock extends Component {
 		time: new Date()
 	}
 
-	componentDidMount() {
-		this.timer = setInterval(this.setDate(), 1000);
-	}
-
-	componentWillUnmount() {
-		clearInterval(this.timer);
-	}
-
 	setDate = () => {
 		const secondHand = document.querySelector('.second-hand');
 		const minHand = document.querySelector('.min-hand');
