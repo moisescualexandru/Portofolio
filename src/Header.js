@@ -5,12 +5,12 @@ import logo from './img/Logo2.png';
 class Header extends Component {
 	render() {
 		return(
-			<div className="header">
-				<div className="info">
-					<div className="image">
-						<img src={logo} alt="site logo"/>
+			<div className='header'>
+				<div className='info'>
+					<div className='image'>
+						<img src={logo} alt='site logo'/>
 					</div>
-					<h2 className="name">Alexandru Moisescu<br/> <span className='function'>Junior Full Stack Developer</span></h2>
+					<h2 className='name'>Alexandru Moisescu<br/> <span className='function'>Junior Full Stack Developer</span></h2>
 				</div>
 				<Clock />
 			</div>

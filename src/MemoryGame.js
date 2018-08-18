@@ -13,11 +13,12 @@ class MemoryGame extends Component {
 	render() {
 		return(
 			<div className='main'>
-				<div className="info-header">
-					<img src={Image} className='project-image' alt="Memory Game Web App" onClick={this.scaleImage}/>
+				<div className='info-header'>
+					<img src={Image} className='project-image' alt='Memory Game Web App' onClick={this.scaleImage}/>
 					<h1>Memory Game</h1>
+					<a className='brandico-github-text git-link' href='https://github.com/moisescualexandru/Memory-Game' target='blank'> Link</a>
 				</div>
-				<div className="info-content">
+				<div className='info-content'>
 					<h3>Description: This is a simple web aplication for a card memory game</h3>
 					<p>- Built a complete browser-based card matching game (also known as Concentration). But this isn’t just any memory game! It’s a shnazzy, well-designed, feature-packed memory game!</p>
 					<p>- Technologies used: HTML5, CSS3, Vanilla JavaScript</p>
@@ -25,7 +26,7 @@ class MemoryGame extends Component {
 				</div>
 				{this.state.scale && (
 					<div className='scaled' onClick={this.scaleImage}>
-						<img src={Image} alt="Memory Game Web App" className='project-image-scaled'/>
+						<img src={Image} alt='Memory Game Web App' className='project-image-scaled'/>
 					</div>
 				)}
 			</div>

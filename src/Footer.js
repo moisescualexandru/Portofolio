@@ -4,9 +4,7 @@ class Footer extends Component {
 	render() {
 		return(
 			<div className='footer'>
-				<div className='line'></div>
-				<div className='line'></div>
-				<div className='line'></div>
+				&#9400; Alexandru Moisescu, Bucharest 2018
 			</div>
 		)
 	}

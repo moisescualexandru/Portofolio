@@ -5,7 +5,7 @@ class Main extends Component {
 	render() {
 		return(
 			<div className='main'>
-				<img src={Bknd} className='center-image' alt="Digital Marketing"/>
+				<img src={Bknd} className='center-image' alt='Digital Marketing'/>
 			</div>
 		)
 	}

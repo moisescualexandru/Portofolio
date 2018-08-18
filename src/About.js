@@ -4,7 +4,7 @@ import Profile from './img/ProfilePic.jpg';
 class About extends Component {
 	render() {
 		return(
-			<div className="main">
+			<div className='main'>
 				<img src={Profile} alt='Profile pic' className='profile-image'/>
 				<h2 className='hi'>Hi, I'm Alex,</h2>
 				<p className='about-me'>

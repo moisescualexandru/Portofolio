@@ -118,6 +118,7 @@ img {
   margin: 1px;
   color: black;
   box-shadow: 2px 2px 2px black;
+  transition: background-color 0.3s ease-in-out;
 }
 
 a {
@@ -151,6 +152,7 @@ a {
   vertical-align: middle;
   padding-top: 10px;
   border-top: 1px groove #85a3e0;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .project:hover {
@@ -226,6 +228,11 @@ a {
   text-decoration-line: underline;
 }
 
+.info-header .git-link {
+  margin-top: 150px;
+  margin-left: -150px;
+}
+
 .info-content {
   padding-top: 10px;
   padding-left: 20px;
@@ -268,4 +275,9 @@ a {
 
 .social-media a:hover {
   cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
 }
